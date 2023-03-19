@@ -1,0 +1,77 @@
+<mxfile host="65bd71144e">
+    <diagram id="72wiOLo-eDxF6rRenAFP" name="Page-1">
+        <mxGraphModel dx="1000" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="470" width="240" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;PC&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="485" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Autor: Aldo Olascoaga Olmedo\n\nFecha de creación: 21 de febrero del 2023\n\nFecha de última modificación: 9 de marzo del 2023\n\nResponsable de la última modificación:  Aldo Olascoaga Olmedo\n&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;b&amp;quot;,&amp;quot;v&amp;quot;:true,&amp;quot;e&amp;quot;:6},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fc&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;Bold&amp;quot;,&amp;quot;e&amp;quot;:6},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fid&amp;quot;,&amp;quot;v&amp;quot;:5,&amp;quot;e&amp;quot;:6},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;c&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;1d262bff&amp;quot;,&amp;quot;e&amp;quot;:186},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;s&amp;quot;,&amp;quot;v&amp;quot;:22.22222222222222,&amp;quot;e&amp;quot;:186},{&amp;quot;s&amp;quot;:29,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:30,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:30,&amp;quot;n&amp;quot;:&amp;quot;b&amp;quot;,&amp;quot;v&amp;quot;:true,&amp;quot;e&amp;quot;:49},{&amp;quot;s&amp;quot;:30,&amp;quot;n&amp;quot;:&amp;quot;fc&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;Bold&amp;quot;,&amp;quot;e&amp;quot;:49},{&amp;quot;s&amp;quot;:30,&amp;quot;n&amp;quot;:&amp;quot;fid&amp;quot;,&amp;quot;v&amp;quot;:5,&amp;quot;e&amp;quot;:49},{&amp;quot;s&amp;quot;:72,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:73,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:73,&amp;quot;n&amp;quot;:&amp;quot;b&amp;quot;,&amp;quot;v&amp;quot;:true,&amp;quot;e&amp;quot;:102},{&amp;quot;s&amp;quot;:73,&amp;quot;n&amp;quot;:&amp;quot;fc&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;Bold&amp;quot;,&amp;quot;e&amp;quot;:102},{&amp;quot;s&amp;quot;:73,&amp;quot;n&amp;quot;:&amp;quot;fid&amp;quot;,&amp;quot;v&amp;quot;:5,&amp;quot;e&amp;quot;:102},{&amp;quot;s&amp;quot;:123,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:124,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:124,&amp;quot;n&amp;quot;:&amp;quot;b&amp;quot;,&amp;quot;v&amp;quot;:true,&amp;quot;e&amp;quot;:164},{&amp;quot;s&amp;quot;:124,&amp;quot;n&amp;quot;:&amp;quot;fc&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;Bold&amp;quot;,&amp;quot;e&amp;quot;:164},{&amp;quot;s&amp;quot;:124,&amp;quot;n&amp;quot;:&amp;quot;fid&amp;quot;,&amp;quot;v&amp;quot;:5,&amp;quot;e&amp;quot;:164},{&amp;quot;s&amp;quot;:164,&amp;quot;n&amp;quot;:&amp;quot;fc&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;Regular&amp;quot;,&amp;quot;e&amp;quot;:185},{&amp;quot;s&amp;quot;:164,&amp;quot;n&amp;quot;:&amp;quot;fid&amp;quot;,&amp;quot;v&amp;quot;:2,&amp;quot;e&amp;quot;:185}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;Autor:&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt; Aldo Olascoaga Olmedo&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;Fecha de creación: 10&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;&amp;nbsp;de marzo del 2023&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;Fecha de última modificación:&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;&amp;nbsp;14 de marzo del 2023&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;Responsable de la última modificación:  &lt;/span&gt;&lt;span style=&quot;color: rgb(29, 38, 43); font-size: 16.6667px;&quot;&gt;Aldo Olascoaga Olmedo&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color:#1d262b;font-size:16.666666666666664px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="15" y="10" width="530" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="200" width="260" height="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Servicio Web&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="545" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="270" width="180" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&amp;lt;&amp;lt;execution environment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;JavaScript / React.js&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="290" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="435" width="180" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&amp;lt;&amp;lt;execution environment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;AWS&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="445" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="610" width="180" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&amp;lt;&amp;lt;execution environment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;MySQL&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="620" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&amp;lt;&amp;lt;artifact&amp;gt;&amp;gt;&lt;br&gt;&lt;br&gt;database.sql" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="670" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#FFFFFF;shape=mxgraph.azure.cloud_services_configuration_file;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="625" y="682.5" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="850" width="180" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&amp;lt;&amp;lt;execution environment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Unity Engine&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="860" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&amp;lt;&amp;lt;artifact&amp;gt;&amp;gt;&lt;br&gt;&lt;br&gt;smart-survival.html" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="900" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&amp;lt;&amp;lt;artifact&amp;gt;&amp;gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;API&lt;/b&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="488.75" width="130" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="525" width="210" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&amp;lt;&amp;lt;execution environment&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Google Chrome / Microsoft Edge&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="535" width="210" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="470" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;b&gt;&amp;lt;&amp;lt;HTTPS&amp;gt;&amp;gt;&lt;/b&gt;" style="endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;entryX=0;entryY=0;entryDx=45;entryDy=0;entryPerimeter=0;exitX=0.372;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#FFFFFF;" parent="1" source="42" target="14" edge="1">
+                    <mxGeometry x="0.027" y="-5" width="160" relative="1" as="geometry">
+                        <mxPoint x="335.5" y="385" as="sourcePoint"/>
+                        <mxPoint x="310" y="280" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

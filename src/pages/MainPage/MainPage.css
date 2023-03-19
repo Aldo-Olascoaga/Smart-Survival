@@ -1,0 +1,9 @@
+.main-page {
+    margin: 0;
+    background-image: url("/src/images/login-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
