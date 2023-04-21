@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 4px #1670ba;
+  border: solid 5px #1670ba;
   border-radius: 20px;
-  padding: 25px;
   margin-left: 30px;
+  padding: 30px 60px;
 }
 
 .enter-btn {
@@ -28,4 +28,29 @@ label {
 .create-account-btn {
   padding: 10px;
 }
+
+.error-message {
+  color: #d44d56;
+  font-weight: bold;
+  border: solid 4px #d44d56;
+  border-radius: 20px;
+  padding: 10px;
+  animation: border-color-error-msg 3s infinite;
+}
+
+@keyframes border-color-error-msg {
+  25% {
+    border-color: #df5527;
+  }
+  50% {
+    border-color: #a83636;
+  }
+  75% {
+    border-color: #df5527;
+  }
+  100% {
+    border-color: #e01313;
+  }
+}
+
 /* Media queries */

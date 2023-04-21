@@ -1,7 +1,6 @@
 import React from 'react';
 import RegisterForm from '../../components/Register/RegisterForm';
 import RegisterHeader from '../../components/Register/RegisterHeader';
-import Circle from '../../components/Circle/Circle';
 import GirlImage from '../../components/Login/GirlImage';
 import './RegisterPage.css';
 

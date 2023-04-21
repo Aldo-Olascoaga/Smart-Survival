@@ -5,6 +5,7 @@ import MainPage from './pages/mainPage/MainPage';
 import RegisterPage from './pages/registerPage/RegisterPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
 import StatisticsPage from './pages/statisticsPage/StatisticsPage';
+import ForgotPasswordPage from './pages/forgotPasswordPage/ForgotPasswordPage';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path='/statistics'
           element={<StatisticsPage />}
+        />
+        <Route
+          path='/forgot-password'
+          element={<ForgotPasswordPage />}
         />
       </Routes>
     </Router>
