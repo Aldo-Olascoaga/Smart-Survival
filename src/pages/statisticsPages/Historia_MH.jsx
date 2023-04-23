@@ -1,22 +1,24 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Board from '../../components/Board/Board';
+import Board from '../../components/Boards/Board';
 
-const StatisticsPage = () => {
+const HistoriaMH = () => {
   const data = [
     {
       usuario: 'Alice',
       email: 'alice@example.com',
-      mundo: 'Ciencias',
-      modoDeJuego: 'Historia',
       ultimoNivel: 10,
+      aciertos: 7,
+      errores: 3,
+      tiempoJuego: 10.5,
     },
     {
       usuario: 'Bob',
       email: 'bob@example.com',
-      mundo: 'Historia',
-      modoDeJuego: 'Contrarreloj',
       ultimoNivel: 5,
+      aciertos: 3,
+      errores: 2,
+      tiempoJuego: 5.5,
     },
   ];
 
@@ -30,4 +32,4 @@ const StatisticsPage = () => {
   );
 };
 
-export default StatisticsPage;
+export default HistoriaMH;

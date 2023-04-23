@@ -10,11 +10,9 @@ const Board = ({ data }) => {
           <tr>
             <th>Usuario</th>
             <th>Email</th>
-            <th>Mundo</th>
-            <th>Modo de juego</th>
             <th>Último nivel</th>
-            <th>Aciertos</th>
-            <th>Errores</th>
+            <th>Aciertos totales</th>
+            <th>Errores totales</th>
             <th>Tiempo de juego</th>
           </tr>
         </thead>
@@ -23,9 +21,10 @@ const Board = ({ data }) => {
             <tr key={index}>
               <td>{row.usuario}</td>
               <td>{row.email}</td>
-              <td>{row.mundo}</td>
-              <td>{row.modoDeJuego}</td>
               <td>{row.ultimoNivel}</td>
+              <td>{row.aciertos}</td>
+              <td>{row.errores}</td>
+              <td>{row.tiempoJuego}</td>
             </tr>
           ))}
         </tbody>

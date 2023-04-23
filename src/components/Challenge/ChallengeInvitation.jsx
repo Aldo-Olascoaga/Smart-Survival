@@ -25,6 +25,8 @@ const ChallengeInvitation = () => {
     } else {
       setEmailError(true);
     }
+
+    // TODO: Send email to the user
   };
 
   function validateEmail(email) {
