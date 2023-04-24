@@ -38,6 +38,8 @@ function RegisterForm(props) {
       estado: mexicoState,
     };
     props.createNewUser(newUser);
+
+    navigate('/');
   }
 
   const handleGoToLogin = async (event) => {
