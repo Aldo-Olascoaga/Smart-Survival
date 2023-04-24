@@ -12,20 +12,20 @@ const StatisticsButtons = () => {
   return (
     <div className='statistics-buttons-container'>
       <div className='statistics-buttons-item'>
-        <button className='statistics-button'>Ciencias, Modo Historia</button>
+        <button className='statistics-button'>Ciencias - Modo Historia</button>
         <button className='statistics-button'>
-          Ciencias, Modo Contrarreloj
+          Ciencias - Modo Contrarreloj
         </button>
-        <button className='statistics-button'>Ciencias, Modo Online</button>
+        <button className='statistics-button'>Ciencias - Modo Online</button>
         <button
           onClick={goToHistoriaModoHistoria}
           className='statistics-button'>
-          Historia, Modo Historia
+          Historia - Modo Historia
         </button>
         <button className='statistics-button'>
-          Historia, Modo Contrarreloj
+          Historia - Modo Contrarreloj
         </button>
-        <button className='statistics-button'>Historia, Modo Online</button>
+        <button className='statistics-button'>Historia - Modo Online</button>
       </div>
     </div>
   );
