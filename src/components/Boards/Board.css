@@ -1,12 +1,13 @@
-.board-container {
+/*.board-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 18%;
+  margin-top: 5%;
   left: 20%;
   text-align: center;
+  top: 30%;
 }
 
 .board-container table,
@@ -15,7 +16,36 @@ th,
 td {
   border: solid 3px #902ac7;
   border-radius: 12px;
-  border-spacing: 15px;
+  border-spacing: 10px;
+  padding: 8px;
+}
+
+.board-container th {
+  background-color: #902ac7;
+
+  color: white;
+}
+*/
+.board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 5%;
+  top: 30%;
+  left: 5%;
+  text-align: center;
+  font-size: small;
+}
+
+.board-container table,
+tr,
+th,
+td {
+  border: solid 3.5px #902ac7;
+  border-radius: 12px;
+  border-spacing: 10px;
   padding: 8px;
 }
 

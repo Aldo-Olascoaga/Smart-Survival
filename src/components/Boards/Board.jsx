@@ -1,30 +1,117 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import './Board.css';
 
-const Board = ({ data }) => {
+const Board = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso',
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: 'Bearer ' + localStorage.getItem('token'),
+          },
+        }
+      );
+      const jsonData = await response.json();
+      setData(jsonData);
+    }
+    fetchData();
+  }, []);
+  console.log(data);
+
   return (
     <div className='board-container'>
-      <h1 className='title-item'>Estadísticas</h1>
       <table>
         <thead>
           <tr>
-            <th>Usuario</th>
-            <th>Email</th>
-            <th>Último nivel</th>
-            <th>Aciertos totales</th>
-            <th>Errores totales</th>
-            <th>Tiempo de juego</th>
+            <th>ID Progreso</th>
+            <th>Fecha de inicio</th>
+            <th>Fecha de terminación</th>
+            <th>Completado</th>
+            <th>ID del usuario</th>
+            <th>Nivel ID</th>
+            <th>Puzzles Completados</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((row, index) => (
-            <tr key={index}>
-              <td>{row.usuario}</td>
-              <td>{row.email}</td>
-              <td>{row.ultimoNivel}</td>
-              <td>{row.aciertos}</td>
-              <td>{row.errores}</td>
-              <td>{row.tiempoJuego}</td>
+          {data.map((progress) => (
+            <tr key={progress.progresoID}>
+              <td>{progress.progresoID}</td>
+              <td>
+                {new Date(progress._startDate).toLocaleDateString('es-MX', {
+                  day: 'numeric',
+                  month: 'short',
+                  year: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  second: '2-digit',
+                })}
+              </td>
+              <td>
+                {new Date(progress._finishDate).toLocaleDateString('es-MX', {
+                  day: 'numeric',
+                  month: 'short',
+                  year: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  second: '2-digit',
+                })}
+              </td>
+              <td>{progress.completado}</td>
+              <td>{progress.User_userID}</td>
+              <td>{progress.Nivel_nivelID}</td>
+              <td>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID del Puzzle</th>
+                      <th>Fecha de inicio</th>
+                      <th>Fecha de terminación</th>
+                      <th>Aciertos</th>
+                      <th>Fallos</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {progress.puzzlesCompletados.map((puzzle) => (
+                      <tr key={puzzle.puzzle}>
+                        <td>{puzzle.puzzle}</td>
+                        <td>
+                          {new Date(puzzle._startDate).toLocaleDateString(
+                            'es-MX',
+                            {
+                              day: 'numeric',
+                              month: 'short',
+                              year: 'numeric',
+                              hour: '2-digit',
+                              minute: '2-digit',
+                              second: '2-digit',
+                            }
+                          )}
+                        </td>
+                        <td>
+                          {new Date(puzzle._finishDate).toLocaleDateString(
+                            'es-MX',
+                            {
+                              day: 'numeric',
+                              month: 'short',
+                              year: 'numeric',
+                              hour: '2-digit',
+                              minute: '2-digit',
+                              second: '2-digit',
+                            }
+                          )}
+                        </td>
+                        <td>{puzzle.aciertos}</td>
+                        <td>{puzzle.fallos}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </td>
             </tr>
           ))}
         </tbody>
