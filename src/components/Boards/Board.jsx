@@ -61,7 +61,7 @@ const Board = () => {
                   second: '2-digit',
                 })}
               </td>
-              <td>{progress.completado}</td>
+              <td>{progress.completado === 1 ? 'Sí' : 'No'}</td>
               <td>{progress.User_userID}</td>
               <td>{progress.Nivel_nivelID}</td>
               <td>
