@@ -12,6 +12,10 @@ const StatisticsButtons = () => {
     navigate('/statistics/historia/mode/historia');
   };
 
+  const goToHistoriaModoOnline = () => {
+    navigate('/statistics/historia/mode/online');
+  };
+
   return (
     <div className='statistics-buttons-container'>
       <div className='aro'>
@@ -43,7 +47,9 @@ const StatisticsButtons = () => {
           className='statistics-button'>
           Historia - Modo Historia
         </button>
-        <button className='statistics-button'>
+        <button
+          className='statistics-button'
+          onClick={goToHistoriaModoOnline}>
           Historia - Modo Contrarreloj
         </button>
         <button className='statistics-button'>Historia - Modo Online</button>

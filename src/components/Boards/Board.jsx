@@ -7,7 +7,7 @@ const Board = () => {
   useEffect(() => {
     async function fetchData() {
       const uri =
-        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso';
+        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso/historia';
       const response = await fetch(uri, {
         method: 'GET',
         headers: {
@@ -67,7 +67,7 @@ const Board = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>ID del Puzzle</th>
+                      <th># Puzzle</th>
                       <th>Fecha de inicio</th>
                       <th>Fecha de terminación</th>
                       <th>Aciertos</th>

@@ -43,14 +43,19 @@ td {
 tr,
 th,
 td {
-  border: solid 3.5px #902ac7;
+  border: solid 4px #0053b1;
   border-radius: 12px;
+  border-style: outset;
   border-spacing: 10px;
   padding: 8px;
 }
 
 .board-container th {
   background-color: #902ac7;
-
+  background: linear-gradient(#0443c6, #04acc2);
   color: white;
+}
+
+.board-container td {
+  background: linear-gradient(#91ebf0, #e9f7f4);
 }
