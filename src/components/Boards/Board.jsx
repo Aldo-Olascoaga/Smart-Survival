@@ -6,22 +6,21 @@ const Board = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(
-        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso',
-        {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: 'Bearer ' + localStorage.getItem('token'),
-          },
-        }
-      );
+      const uri =
+        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso';
+      const response = await fetch(uri, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + localStorage.getItem('token'),
+        },
+      });
       const jsonData = await response.json();
       setData(jsonData);
     }
     fetchData();
   }, []);
-  console.log(data);
+  //console.log(data);
 
   return (
     <div className='board-container'>

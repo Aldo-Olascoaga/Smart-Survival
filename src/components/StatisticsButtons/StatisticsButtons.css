@@ -1,15 +1,42 @@
 .statistics-buttons-container {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   margin: 0 0 20px 0;
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 30%;
+  left: 15%;
 }
 
 .statistics-button {
+  background: linear-gradient(#f07249, #f02649);
   padding: 12px;
   margin: 5%;
   height: 30%;
   font-size: large;
+  border: solid 8px #d44d56;
+  border-style: outset;
+}
+
+.aro {
+  display: flex;
+  position: absolute;
+  transform: scale(0.6);
+  top: 1%;
+  right: 75%;
+}
+
+.purple-squares {
+  display: flex;
+  position: absolute;
+  transform: scale(0.4);
+  top: 17%;
+  left: 70%;
+}
+
+.serpentina {
+  display: flex;
+  position: absolute;
+  transform: scale(0.35);
+  top: 40%;
+  left: 81%;
 }

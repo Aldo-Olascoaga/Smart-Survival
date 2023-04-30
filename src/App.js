@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import MainPage from './pages/mainPage/MainPage';
 import RegisterPage from './pages/registerPage/RegisterPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
@@ -22,7 +23,11 @@ function App() {
         />
         <Route
           path='/my-profile'
-          element={<ProfilePage />}
+          element={
+            <ProtectedRoute>
+              <ProfilePage />
+            </ProtectedRoute>
+          }
         />
         <Route
           path='/statistics'
