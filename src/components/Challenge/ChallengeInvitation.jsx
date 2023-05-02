@@ -33,6 +33,7 @@ const ChallengeInvitation = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
         body: JSON.stringify({
           to: 'A01424731@tec.mx',
