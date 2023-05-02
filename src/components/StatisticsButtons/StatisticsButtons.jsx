@@ -9,7 +9,9 @@ const StatisticsButtons = () => {
   const navigate = useNavigate();
 
   const goToHistoriaModoHistoria = () => {
-    navigate('/statistics/historia/mode/historia');
+    navigate(
+      'https://front-end-test.d3baae27c9vcp4.amplifyapp.com/statistics/historia/mode/historia'
+    );
   };
 
   const goToHistoriaModoOnline = () => {
