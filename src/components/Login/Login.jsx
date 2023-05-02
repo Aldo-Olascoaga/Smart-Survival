@@ -116,7 +116,7 @@ const Login = () => {
     // handle login or registration logic
 
     const uri =
-      'http://smart-survival-api.us-east-1.elasticbeanstalk.com/usuario';
+      'https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/usuario';
     const email = form.current.email.value;
     const password = form.current.password.value;
     const response = await fetch(uri, {
