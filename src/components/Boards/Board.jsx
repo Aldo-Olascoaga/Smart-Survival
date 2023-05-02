@@ -7,7 +7,7 @@ const Board = () => {
   useEffect(() => {
     async function fetchData() {
       const uri =
-        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso/historia';
+        'https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/progreso/historia';
       const response = await fetch(uri, {
         method: 'GET',
         headers: {

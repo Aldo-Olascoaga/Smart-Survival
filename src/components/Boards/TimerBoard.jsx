@@ -7,7 +7,7 @@ const TimerBoard = () => {
   useEffect(() => {
     async function fetchData() {
       const uri =
-        'http://smart-survival-api.us-east-1.elasticbeanstalk.com/progreso/reloj';
+        'https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/progreso/reloj';
       const response = await fetch(uri, {
         method: 'GET',
         headers: {
