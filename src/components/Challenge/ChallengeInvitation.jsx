@@ -3,27 +3,27 @@ import '../Profile/Profile.css';
 
 const ChallengeInvitation = () => {
   const [inputValue, setInputValue] = useState('');
-  const [emailError, setEmailError] = useState(false);
-  const [isValidEmail, setIsValidEmail] = useState(false);
-  const [sentEmail, setSentEmail] = useState('');
+  const [usernameError, setUsernameError] = useState(false);
+  const [isValidUsername, setIsValidUsername] = useState(false);
+  const [sentUsername, setSentUsername] = useState('');
 
   function handleInputChange(event) {
     const value = event.target.value;
     setInputValue(value);
-    setIsValidEmail(validateEmail(value));
+    setIsValidUsername(validateUsername(value));
   }
 
   useEffect(() => {
-    setIsValidEmail(validateEmail(inputValue));
+    setIsValidUsername(validateUsername(inputValue));
   }, [inputValue]);
 
   const handleChallengeInvitation = () => {
-    if (isValidEmail) {
+    if (isValidUsername) {
       console.log('Invitación enviada');
-      setEmailError(false);
-      setSentEmail(inputValue);
+      setUsernameError(false);
+      setSentUsername(inputValue);
     } else {
-      setEmailError(true);
+      setUsernameError(true);
     }
 
     // TODO: Send email to the user
@@ -36,7 +36,8 @@ const ChallengeInvitation = () => {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
         body: JSON.stringify({
-          to: 'A01424731@tec.mx',
+          to: '',
+          username: inputValue,
           subject: 'Test email',
           message: 'This is a test email sent from my React.js app',
         }),
@@ -47,10 +48,10 @@ const ChallengeInvitation = () => {
       .catch((error) => console.error(error));
   };
 
-  function validateEmail(email) {
-    // Regular expression to check if the email is valid
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+  function validateUsername(username) {
+    // Regular expression to check if the username is valid
+    const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
+    return usernameRegex.test(username);
   }
 
   return (
@@ -59,32 +60,32 @@ const ChallengeInvitation = () => {
         <h2>¿Quieres poner a prueba a tus amigos?</h2>
         <p>¡Rétalos a jugar Smart Survival y demuestra que eres el mejor!</p>
         <p>
-          Sólo escribe su correo electrónico y de inmediato podrás enviarles una
+          Sólo escribe su nombre de usuario y de inmediato podrás enviarles una
           invitación para jugar.
         </p>
       </div>
       <div className='send-invitation-item'>
         <input
-          type='email'
-          placeholder='Correo electrónico'
+          type='text'
+          placeholder='Nombre de usuario'
           onChange={handleInputChange}
-          className={emailError ? 'error' : ''}
+          className={usernameError ? 'error' : ''}
         />
-        {emailError && (
+        {usernameError && (
           <p className='error-message'>
-            Por favor, ingresa un correo electrónico válido.
+            Por favor, ingresa un nombre de usuario válido.
           </p>
         )}
-        {isValidEmail && !sentEmail && (
+        {isValidUsername && !sentUsername && (
           <button
             className='challenge-btn'
             onClick={handleChallengeInvitation}>
             Enviar invitación
           </button>
         )}
-        {sentEmail && (
+        {sentUsername && (
           <p className='successful-invitation'>
-            ¡Invitación enviada a: {sentEmail}!
+            ¡Invitación enviada a: {sentUsername}!
           </p>
         )}
       </div>
