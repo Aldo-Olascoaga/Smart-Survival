@@ -28,7 +28,7 @@ const ChallengeInvitation = () => {
 
     // TODO: Send email to the user
     fetch(
-      'https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/usuario/solicitud/DEAP',
+      `https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/usuario/solicitud/${inputValue}`,
       {
         method: 'POST',
         headers: {
