@@ -38,8 +38,9 @@ const ChallengeInvitation = () => {
         body: JSON.stringify({
           to: '',
           username: inputValue,
-          subject: 'Test email',
-          message: 'This is a test email sent from my React.js app',
+          subject: 'Invitación de juego',
+          message:
+            '¡Hola! Te invito a jugar Smart Survival y poner a prueba tus conocimientos. ¿Te atreves?',
         }),
       }
     )
