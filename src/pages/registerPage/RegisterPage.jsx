@@ -6,7 +6,7 @@ import './RegisterPage.css';
 
 const RegisterPage = () => {
   const createNewUser = (user) => {
-    fetch('http://smart-survival-api.us-east-1.elasticbeanstalk.com/usuario', {
+    fetch('https://q2edtlk17d.execute-api.us-east-1.amazonaws.com/usuario', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
