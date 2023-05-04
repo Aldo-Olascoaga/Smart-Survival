@@ -10,6 +10,7 @@ import ForgotPasswordPage from './pages/forgotPasswordPage/ForgotPasswordPage';
 import HistoriaMH from './pages/statisticsPages/Historia_MH';
 import HistoriaMC from './pages/statisticsPages/Historia_MC';
 import HistoriaMO from './pages/statisticsPages/Historia_MO';
+import NewPage from './components/NewPage/NewPage';
 
 function App() {
   return (
@@ -17,7 +18,15 @@ function App() {
       <Routes>
         <Route
           path='/'
-          element={<MainPage />}
+          element={
+            <ProtectedRoute>
+              <MainPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path='/validate/:token'
+          element={<NewPage />}
         />
         <Route
           path='/register'
@@ -33,7 +42,11 @@ function App() {
         />
         <Route
           path='/statistics'
-          element={<StatisticsPage />}
+          element={
+            <ProtectedRoute>
+              <StatisticsPage />
+            </ProtectedRoute>
+          }
         />
         <Route
           path='/forgot-password'
@@ -41,15 +54,27 @@ function App() {
         />
         <Route
           path='/statistics/historia/mode/historia'
-          element={<HistoriaMH />}
+          element={
+            <ProtectedRoute>
+              <HistoriaMH />
+            </ProtectedRoute>
+          }
         />
         <Route
           path='/statistics/historia/mode/contrarreloj'
-          element={<HistoriaMC />}
+          element={
+            <ProtectedRoute>
+              <HistoriaMC />
+            </ProtectedRoute>
+          }
         />
         <Route
           path='/statistics/historia/mode/online'
-          element={<HistoriaMO />}
+          element={
+            <ProtectedRoute>
+              <HistoriaMO />
+            </ProtectedRoute>
+          }
         />
       </Routes>
     </Router>

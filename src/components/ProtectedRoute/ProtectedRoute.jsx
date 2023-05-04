@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom';
-
 const ProtectedRoute = ({ children }) => {
-  const navigate = useNavigate();
-
-  const token = localStorage.getItem('token');
-  if (token === null) {
-    return navigate('/');
+  const loggedIn = localStorage.getItem('token');
+  if (!loggedIn) {
+    return window.location.replace(
+      'https://main.drvblo32vuwsq.amplifyapp.com/login'
+    );
   }
   return children;
 };
