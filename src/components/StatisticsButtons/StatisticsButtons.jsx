@@ -12,6 +12,10 @@ const StatisticsButtons = () => {
     navigate('/statistics/historia/mode/historia');
   };
 
+  const goToHistoriaModoContrarreloj = () => {
+    navigate('/statistics/historia/mode/contrarreloj');
+  };
+
   const goToHistoriaModoOnline = () => {
     navigate('/statistics/historia/mode/online');
   };
@@ -37,11 +41,6 @@ const StatisticsButtons = () => {
         />
       </div>
       <div className='statistics-buttons-item'>
-        <button className='statistics-button'>Ciencias - Modo Historia</button>
-        <button className='statistics-button'>
-          Ciencias - Modo Contrarreloj
-        </button>
-        <button className='statistics-button'>Ciencias - Modo Online</button>
         <button
           onClick={goToHistoriaModoHistoria}
           className='statistics-button'>
@@ -49,10 +48,14 @@ const StatisticsButtons = () => {
         </button>
         <button
           className='statistics-button'
-          onClick={goToHistoriaModoOnline}>
+          onClick={goToHistoriaModoContrarreloj}>
           Historia - Modo Contrarreloj
         </button>
-        <button className='statistics-button'>Historia - Modo Online</button>
+        <button
+          className='statistics-button'
+          onClick={goToHistoriaModoOnline}>
+          Historia - Modo Online
+        </button>
       </div>
     </div>
   );

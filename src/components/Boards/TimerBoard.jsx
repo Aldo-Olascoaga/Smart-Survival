@@ -30,15 +30,15 @@ const TimerBoard = () => {
             <th>ID Progreso</th>
             <th>Fecha de inicio</th>
             <th>Fecha de terminación</th>
-            <th>Niveles</th>
+            <th>Niveles completados</th>
             <th>Usuario</th>
             <th>Preguntas</th>
           </tr>
         </thead>
         <tbody>
           {data.map((progress) => (
-            <tr key={progress.progresoID}>
-              <td>{progress.progresoID}</td>
+            <tr key={progress.modoRelojID}>
+              <td>{progress.modoRelojID}</td>
               <td>
                 {new Date(progress._createdDate).toLocaleDateString('es-MX', {
                   day: 'numeric',

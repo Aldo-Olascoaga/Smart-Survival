@@ -8,6 +8,7 @@ import ProfilePage from './pages/profilePage/ProfilePage';
 import StatisticsPage from './pages/statisticsPages/seeStatistics';
 import ForgotPasswordPage from './pages/forgotPasswordPage/ForgotPasswordPage';
 import HistoriaMH from './pages/statisticsPages/Historia_MH';
+import HistoriaMC from './pages/statisticsPages/Historia_MC';
 import HistoriaMO from './pages/statisticsPages/Historia_MO';
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
         <Route
           path='/statistics/historia/mode/historia'
           element={<HistoriaMH />}
+        />
+        <Route
+          path='/statistics/historia/mode/contrarreloj'
+          element={<HistoriaMC />}
         />
         <Route
           path='/statistics/historia/mode/online'

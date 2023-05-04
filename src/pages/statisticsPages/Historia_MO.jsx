@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import TimerBoard from '../../components/Boards/TimerBoard';
+import MultiplayerBoard from '../../components/Boards/MultiplayerBoard';
 
 const HistoriaMO = () => {
   return (
@@ -8,7 +8,7 @@ const HistoriaMO = () => {
       <div>
         <Header />
       </div>
-      <TimerBoard />
+      <MultiplayerBoard />
     </div>
   );
 };
