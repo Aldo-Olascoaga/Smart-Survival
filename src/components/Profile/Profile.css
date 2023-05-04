@@ -1,6 +1,3 @@
-body {
-  overflow: hidden;
-}
 .profile-container {
   display: flex;
   justify-content: space-evenly;
