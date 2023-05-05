@@ -44,17 +44,17 @@ const StatisticsButtons = () => {
         <button
           onClick={goToHistoriaModoHistoria}
           className='statistics-button'>
-          Historia - Modo Historia
+          Modo Historia
         </button>
         <button
           className='statistics-button'
           onClick={goToHistoriaModoContrarreloj}>
-          Historia - Modo Contrarreloj
+          Modo Contrarreloj
         </button>
         <button
           className='statistics-button'
           onClick={goToHistoriaModoOnline}>
-          Historia - Modo Online
+          Modo Online
         </button>
       </div>
     </div>
