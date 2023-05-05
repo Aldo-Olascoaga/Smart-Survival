@@ -7,6 +7,7 @@ const Play = () => {
 
   const playGame = () => {
     // Use navigate() to go to the videogame
+    navigate('http://survivaltrivia.s3-website-us-east-1.amazonaws.com/');
     console.log('Ir al juego');
   };
 
