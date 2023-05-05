@@ -61,23 +61,6 @@ const TimerBoard = () => {
               </td>
 
               <td>{progress.niveles}</td>
-              <td>{progress.User_userID}</td>
-              <td>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Aciertos</th>
-                      <th>Fallos</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>{progress.preguntas.aciertos}</td>
-                      <td>{progress.preguntas.fallos}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
             </tr>
           ))}
         </tbody>
