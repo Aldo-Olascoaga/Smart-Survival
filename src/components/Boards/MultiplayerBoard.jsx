@@ -27,6 +27,45 @@ const MultiplayerBoard = () => {
       <table>
         <thead>
           <tr>
+            <th>Modo Reloj ID</th>
+            <th>Fecha de creación</th>
+            <th>Niveles</th>
+            <th>Usuario ID</th>
+            <th>Preguntas</th>
+            <th>Fecha de finalización</th>
+            <th>Puzzles</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item) => (
+            <tr key={item.modoRelojID}>
+              <td>{item.modoRelojID}</td>
+              <td>{new Date(item._createdDate).toLocaleString()}</td>
+              <td>{item.niveles}</td>
+              <td>{item.User_userID}</td>
+              <td>{item.preguntas}</td>
+              <td>
+                {item._finishDate
+                  ? new Date(item._finishDate).toLocaleString()
+                  : 'N/A'}
+              </td>
+              <td>
+                {item.puzzles.length > 0
+                  ? `${item.puzzles[0].aciertos}/${item.puzzles[0].fallos}`
+                  : 'N/A'}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+  /*
+  return (
+    <div className='board-container'>
+      <table>
+        <thead>
+          <tr>
             <th># Sesión</th>
             <th>Fecha de inicio</th>
             <th>Fecha de terminación</th>
@@ -77,5 +116,6 @@ const MultiplayerBoard = () => {
       </table>
     </div>
   );
+  */
 };
 export default MultiplayerBoard;
